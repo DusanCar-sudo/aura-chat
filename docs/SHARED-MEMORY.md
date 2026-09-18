@@ -78,7 +78,7 @@ Same shape as Aura Droid's `Memory` (Room), so the phone maps 1:1:
 - `useCount` and `lastUsedAt` do not bump `updatedAt` (reading a memory
   must not make it win a conflict). Clients batch usage and write it at
   most once an hour.
-- Each client keeps a local copy (Room on the phone, IndexedDB on the
+- Each client keeps a local copy (Room on the phone, localStorage on the
   web) and syncs on start, on resume and after each write. Offline is
   normal: writes queue locally.
 - **Budget:** what goes into the prompt is at most ~40 memories, ranked
