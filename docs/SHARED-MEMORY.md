@@ -1,7 +1,7 @@
-# Aura shared memory on Puter KV (draft for review)
+# Aura shared memory on Puter KV
 
 One Aura everywhere: the phone (Aura Droid), the web client on Puter's
-desktop, the site chat and Telegram read and write the same memory, so
+desktop and Telegram read and write the same memory, so
 something told to Aura on the phone is known on the web a minute later.
 Nothing here needs our server: Puter KV is per-user cloud storage that
 comes with the visitor's Puter sign-in.
