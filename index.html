@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask Aura demo</title>
+<style>
+  :root { --bg: #faf9f5; --fg: #141413; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1f1e1d; --fg: #e8e6dc; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 16px; }
+</style>
+</head>
+<body>
+<h1>Ask Aura</h1>
+<p>Test page for the site chat. Click <b>Ask Aura</b> at the bottom right.</p>
+<script src="aura-kb.js"></script>
+<script src="aura-chat.js" data-product="Aura" defer></script>
+</body>
+</html>
