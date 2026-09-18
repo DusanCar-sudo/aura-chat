@@ -6,7 +6,7 @@ something told to Aura on the phone is known on the web a minute later.
 Nothing here needs our server: Puter KV is per-user cloud storage that
 comes with the visitor's Puter sign-in.
 
-**Status: draft.** Nothing is built yet; this fixes the shape first so the
+**Status: approved 2026-09-18.** This fixes the shape first so the
 three clients (B web, A Droid, Telegram) don't each invent their own.
 
 ## 1. What syncs and what never leaves the machine
@@ -94,10 +94,10 @@ Same shape as Aura Droid's `Memory` (Room), so the phone maps 1:1:
   client may publish selected lessons as `cloud` memories.
 - **Sharing between users:** none. Every Puter account is its own Aura.
 
-## Open questions for Dusan
+## Decisions (Dusan, 2026-09-18)
 
-1. Default for chat summaries: `cloud` (Aura remembers conversations
-   across devices) or `local` (only facts sync)?
-2. Should the public site chat (anonymous visitors) read/write memory at
-   all? Proposed: no; only signed-in clients you run (web, Droid, Telegram).
-3. Anything to add to the deny list besides Imprint?
+1. Chat summaries are `cloud`: Aura remembers conversations across devices
+   (summaries only; raw transcripts stay `local`).
+2. The public site chat does not read or write memory. Only signed-in
+   clients we run (web, Droid, Telegram) do.
+3. Deny list: Imprint plus the built-in secret/IP/path patterns; nothing else.
